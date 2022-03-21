@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1 id="title">Smartphone users choice survey.</h1>
+        <p id="description"><em>This a survey form for free code camp.</em></p>
+    </header>
+    <form action="" id="survey-form">
+        <div class="form_info">
+            <label for="name" class="form_data" id="name-label">Name </label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form_info">
+            <label for="age" class="form_data" id="number-label">Age  </label>
+            <input type="number" id="number" placeholder="Enter your Age" min="10" max="100" required>
+        </div>
+        <div class="form_info">
+            <label for="email" class="form_data" id="email-label">Email </label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <div class="form_info">
+            <label for="" class="form_data">
+                Select your favourite brand.
+            </label>
+            <select name="favourite" class="fav_brand" id="dropdown">
+                <option value="Samsung" class="option">Samsung</option>
+                <option value="Apple" class="option">Apple</option>
+                <option value="Xiaomi" class="option">Xiaomi</option>
+                <option value="One-plus" class="option">One-plus</option>
+                <option value="Motorola" class="option">Motorola</option>
+                <option value="Google" class="option">Google</option>
+                <option value="Huawei" class="option">Huawei</option>
+            </select>
+        </div>
+
+        <div class="form_info">
+            <label for="" class="form_data">
+                How many rear camera(s) do you prefer ?  
+            </label>
+            <select name="Camera" class="tot_cameras">
+                <option value="1" class="option">1</option>
+                <option value="2" class="option">2</option>
+                <option value="3" class="option">3</option>
+                <option value="4" class="option">4</option>
+                <option value="More" class="option">The more, the better</option>
+            </select>    
+        </div>
+
+        <div class="form_info">
+            <label for="" class="form_data">
+                <strong>What screen do you prefer ?</strong>  
+            </label>
+            <label for="">
+                <input type="radio" value="amoled" name="display" class="display_choice" checked>Amoled
+            </label>
+            <label for="">
+                <input type="radio" value="IPS LCD" name="display" class="display_choice">IPS LCD
+            </label>
+            <label for="">
+                <input type="radio" value="Doesn't Matter" name="display" class="display_choice">Doesn't matter
+            </label>
+        </div>
+
+        <div class="form_info">
+            <label for="processor" class="form_data">
+                <strong>Which processor brand you prefer ?</strong>
+            </label>
+            <label for="">
+                <input type="checkbox" value="Qualcom Snapdragon" name="display" class="display_choice">Qualcom Snapdragon
+            </label>
+            <label for="">
+                <input type="checkbox" value="Mediatek" name="display" class="display_choice">Mediatek
+            </label>
+            <label for="">
+                <input type="checkbox" value="Exynos" name="display" class="display_choice">Exynos
+            </label>
+            <label for="">
+                <input type="checkbox" value="Unisoc" name="display" class="display_choice">Unisoc
+            </label>
+        </div>
+
+        <div class="form_info">
+            <label for="comments" class="form_data">Any additional Info you want to share ?</label>
+            <textarea name="comments" id="textarea" cols="100" rows="10" placeholder="Write here"></textarea>
+        </div>
+
+        <button id="submit" type="submit">Submit Form</button>
+    </form>
+</body>
+<script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+</html>
